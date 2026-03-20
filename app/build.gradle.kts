@@ -7,6 +7,8 @@ plugins {
     kotlin("kapt")
     // Safe Args
     id("androidx.navigation.safeargs.kotlin")
+    id("kotlin-parcelize")
+    kotlin("plugin.serialization") version "1.5.0"
 }
 
 android {
@@ -90,4 +92,7 @@ dependencies {
 
     // Gson
     implementation("com.google.code.gson:gson:2.13.2")
+
+    // Serialization Json
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.1")
 }
