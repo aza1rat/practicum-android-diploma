@@ -5,6 +5,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("ru.practicum.android.diploma.plugins.developproperties")
     kotlin("kapt")
+    id("com.google.devtools.ksp")
     // Safe Args
     id("androidx.navigation.safeargs.kotlin")
     id("kotlin-parcelize")
@@ -70,7 +71,7 @@ dependencies {
     // Room
     implementation("androidx.room:room-runtime:2.8.4")
     implementation("androidx.room:room-ktx:2.8.4")
-    kapt("androidx.room:room-compiler:2.8.4")
+    ksp("androidx.room:room-compiler:2.8.4")
 
     // Glide
     implementation("com.github.bumptech.glide:glide:5.0.5")
